@@ -1,0 +1,88 @@
+import { Product } from '../types';
+
+export const products: Product[] = [
+  {
+    id: 'road-freight',
+    category: 'Land Transport',
+    name: 'Road Freight',
+    description: 'Efficient ground transportation with real-time tracking and door-to-door delivery across all major cities in Indonesia.',
+    image: 'https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=800',
+    features: [
+      'Same-day delivery options',
+      'GPS real-time tracking',
+      'Temperature controlled vehicles',
+      'Insurance coverage',
+      '24/7 customer support',
+    ],
+  },
+  {
+    id: 'sea-freight',
+    category: 'Ocean Transport',
+    name: 'Sea Freight',
+    description: 'Cost-effective ocean shipping solutions for bulk cargo with comprehensive port-to-port services across Asia Pacific.',
+    image: 'https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg?auto=compress&cs=tinysrgb&w=800',
+    features: [
+      'Full container load (FCL)',
+      'Less than container load (LCL)',
+      'Customs clearance',
+      'Port handling',
+      'Cargo insurance',
+    ],
+  },
+  {
+    id: 'air-freight',
+    category: 'Air Transport',
+    name: 'Air Freight',
+    description: 'Fast and reliable air cargo services for time-sensitive shipments with global reach and premium handling.',
+    image: 'https://images.pexels.com/photos/62623/airplane-departure-airport-sky-62623.jpeg?auto=compress&cs=tinysrgb&w=800',
+    features: [
+      'Express delivery worldwide',
+      'Temperature-sensitive handling',
+      'Dangerous goods certified',
+      'Airport-to-airport service',
+      'Priority boarding',
+    ],
+  },
+  {
+    id: 'warehouse-distribution',
+    category: 'Storage & Fulfillment',
+    name: 'Warehouse & Distribution',
+    description: 'Modern storage facilities with advanced inventory management and seamless distribution networks.',
+    image: 'https://images.pexels.com/photos/4484078/pexels-photo-4484078.jpeg?auto=compress&cs=tinysrgb&w=800',
+    features: [
+      '50,000+ sq ft facility',
+      'Automated inventory system',
+      'Pick and pack services',
+      'Cross-docking operations',
+      'Last-mile delivery',
+    ],
+  },
+  {
+    id: 'cold-chain',
+    category: 'Temperature Control',
+    name: 'Cold Chain Logistics',
+    description: 'Specialized temperature-controlled logistics for pharmaceuticals, food, and perishable goods.',
+    image: 'https://images.pexels.com/photos/4397895/pexels-photo-4397895.jpeg?auto=compress&cs=tinysrgb&w=800',
+    features: [
+      '-25°C to +25°C range',
+      'Real-time temperature monitoring',
+      'GDP compliant facilities',
+      'Reefer trucks fleet',
+      'Cold storage warehouses',
+    ],
+  },
+  {
+    id: 'supply-chain',
+    category: 'End-to-End',
+    name: 'Supply Chain Management',
+    description: 'Complete supply chain solutions from procurement to final delivery, optimized for your business needs.',
+    image: 'https://images.pexels.com/photos/4393637/pexels-photo-4393637.jpeg?auto=compress&cs=tinysrgb&w=800',
+    features: [
+      'Vendor management',
+      'Demand forecasting',
+      'Order fulfillment',
+      'Reverse logistics',
+      'Analytics dashboard',
+    ],
+  },
+];
