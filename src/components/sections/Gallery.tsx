@@ -35,7 +35,7 @@ const Gallery = () => {
         </motion.div>
 
         {/* Products Subsection */}
-        <div className="mb-16">
+        <div className="mb-20">
           <motion.h3
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -52,20 +52,35 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Videos Subsection */}
+        {/* Videos Subsection - Premium Style */}
         <div>
-          <motion.h3
+          {/* Video Section Header */}
+          <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="text-h4 text-brand-heading mb-6"
+            className="mb-8"
           >
-            Videos
-          </motion.h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {galleryVideos.map((video, index) => (
-              <VideoCard key={video.id} video={video} index={index} />
+            <div className="flex items-center gap-4 mb-3">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-brand-border to-transparent" />
+              <h3 className="text-h4 text-brand-heading font-semibold">Videos</h3>
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-brand-border to-transparent" />
+            </div>
+            <p className="text-body-sm text-brand-body text-center">
+              Watch our operations and see logistics excellence in action
+            </p>
+          </motion.div>
+
+          {/* Featured Video (First) */}
+          <div className="mb-6">
+            <VideoCard video={galleryVideos[0]} index={0} />
+          </div>
+
+          {/* Remaining Videos Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryVideos.slice(1).map((video, index) => (
+              <VideoCard key={video.id} video={video} index={index + 1} />
             ))}
           </div>
         </div>

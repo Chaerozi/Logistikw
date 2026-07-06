@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { Button, Container } from '../common';
+import { Container } from '../common';
 import { navigationItems } from '../../constants/navigation';
 import logo from '../../assets/Logo.svg';
 
@@ -106,16 +106,6 @@ const Navbar = () => {
             })}
           </ul>
 
-          {/* Right side buttons */}
-          <div className="hidden lg:flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Login
-            </Button>
-            <Button variant="primary" size="sm">
-              Get Started
-            </Button>
-          </div>
-
           {/* Mobile menu button */}
           <motion.button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -189,19 +179,6 @@ const Navbar = () => {
                     );
                   })}
                 </ul>
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="flex flex-col gap-2.5 pt-4 mt-4 border-t border-brand-border"
-                >
-                  <Button variant="outline" size="md" className="w-full">
-                    Login
-                  </Button>
-                  <Button variant="primary" size="md" className="w-full">
-                    Get Started
-                  </Button>
-                </motion.div>
               </nav>
             </Container>
           </motion.div>
