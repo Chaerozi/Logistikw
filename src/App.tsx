@@ -4,6 +4,7 @@ import {
   About,
   Gallery,
   Testimonials,
+  FAQ,
 } from './components/sections';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Gallery />
         <Testimonials />
+        <FAQ />
       </main>
       <Footer />
     </div>

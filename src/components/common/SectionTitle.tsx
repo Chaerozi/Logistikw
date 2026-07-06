@@ -21,7 +21,7 @@ const SectionTitle = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className={`${centered ? 'text-center' : ''} mb-12 lg:mb-16 ${className}`}
+      className={`${centered ? 'text-center' : ''} mb-12 lg:mb-14 ${className}`}
     >
       {badge && (
         <motion.div
@@ -29,7 +29,7 @@ const SectionTitle = ({
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/5 rounded-full mb-5"
+          className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/5 border border-primary/10 rounded-full mb-5"
         >
           <span className="w-1.5 h-1.5 bg-accent rounded-full" />
           <span className="text-caption text-primary uppercase tracking-wide font-semibold">
@@ -42,7 +42,7 @@ const SectionTitle = ({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.4, delay: 0.08 }}
-        className="text-h2 text-brand-heading mb-3"
+        className="text-h2 text-brand-heading mb-4"
       >
         {title}
       </motion.h2>

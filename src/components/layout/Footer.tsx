@@ -24,9 +24,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-brand-heading relative" role="contentinfo">
+    <footer id="contact" className="bg-brand-heading relative" role="contentinfo">
+      {/* Top gradient accent */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-primary/10 to-transparent opacity-50" />
       {/* Top border accent */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       <Container className="py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">

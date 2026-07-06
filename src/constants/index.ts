@@ -9,3 +9,4 @@ export * from './features';
 export * from './products';
 export * from './gallery';
 export * from './videos';
+export * from './faq';

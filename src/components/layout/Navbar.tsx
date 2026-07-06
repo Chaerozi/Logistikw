@@ -11,7 +11,7 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   const handleScroll = useCallback(() => {
-    setIsScrolled(window.scrollY > 16);
+    setIsScrolled(window.scrollY > 12);
 
     const sections = navigationItems.map((item) => item.id);
     for (const section of sections.reverse()) {
@@ -49,28 +49,28 @@ const Navbar = () => {
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-soft border-b border-brand-border/30'
+          ? 'bg-white/95 backdrop-blur-md shadow-soft border-b border-brand-border/40'
           : 'bg-transparent'
       }`}
     >
       <Container>
-        <nav className="flex items-center justify-between h-24 lg:h-28" aria-label="Main navigation">
+        <nav className="flex items-center justify-between h-20 lg:h-22" aria-label="Main navigation">
           {/* Logo */}
           <motion.a
             href="#home"
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-2.5 group"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.15 }}
             aria-label="Spice - Home"
           >
-            <div className="relative w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:-rotate-3">
+            <div className="relative w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:-rotate-3">
               <img
                 src={logo}
                 alt="Spice logo"
-                className="w-full h-full object-contain drop-shadow-[0_2px_6px_rgba(0,0,0,0.12)]"
+                className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-xl lg:text-2xl font-bold tracking-tight text-brand-heading group-hover:text-primary transition-colors duration-250">
+            <span className="text-lg lg:text-xl font-bold tracking-tight text-brand-heading group-hover:text-primary transition-colors duration-250">
               Spice
             </span>
           </motion.a>

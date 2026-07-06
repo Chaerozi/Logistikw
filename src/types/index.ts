@@ -111,3 +111,9 @@ export interface Video {
   videoUrl: string;
   duration: string;
 }
+
+export interface FAQItem {
+  id: string;
+  question: string;
+  answer: string;
+}
